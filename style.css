@@ -1,0 +1,31 @@
+body {
+    font-family: monospace;
+    color: green;
+    background-color: black
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    border: 1px solid green;
+    padding: 20px;
+}
+
+.paragraf1 {
+    color: royalblue;
+}
+
+.paragraf2 {
+    color: orangered;
+}
+
+.paragraf3 {
+    color: yellowgreen;
+}
+
+a {
+    position: relative;
+    left: 70%;
+}
