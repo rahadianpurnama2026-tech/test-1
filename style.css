@@ -25,17 +25,12 @@ h1 {
     color: yellowgreen;
 }
 
-.a {
+.a1 {
     position: relative;
-    left: 70%;
+    left: 80%;
 }
 
-.container1 {
-    border: 1px solid green;
-    padding: 20px;
-}
-
-.a2 {
-    position: relative;
-    left: 10%;
+footer {
+    text-align: center;
+    margin-top: 100%;
 }
