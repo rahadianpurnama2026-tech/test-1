@@ -1,0 +1,21 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.tanpa-bootstrap {
+    border: none;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 3em;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.tanpa-bootstrap:hover {
+    background-color: blue;
+    color: blueviolet;
+    transform: rotateY('2');
+    transition: all .5s;
+}
