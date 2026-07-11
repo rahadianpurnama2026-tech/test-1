@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <title>R_ndzhx</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center min-h-screen bg-gray-800 gap-4"
+    >
+      <!-- lampu 1 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="assets/images/off.gif" alt="" id="lampu1" />
+
+        <label for="default-toggle1" class="inline-flex items-center cursor-pointer">
+          <input type="checkbox" id="default-toggle1" value="" class="sr-only peer" onchange="saklar(1)" />
+          <div
+            class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand"
+          ></div>
+        </label>
+
+      </div>
+
+      <!-- lampu 2 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="assets/images/off.gif" alt="" id="lampu2" />
+       <label for="default-toggle2" class="inline-flex items-center cursor-pointer">
+          <input type="checkbox" id="default-toggle2" value="" class="sr-only peer" onchange="saklar(2)" />
+          <div
+            class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand"
+          ></div>
+        </label>
+      </div>
+
+      <!-- lampu 3 -->
+      <div class="flex flex-col gap-2 items-center">
+        <img src="assets/images/off.gif" alt="" id="lampu3" />
+        <label for="default-toggle3" class="inline-flex items-center cursor-pointer">
+          <input type="checkbox" id="default-toggle3" value="" class="sr-only peer" onchange="saklar(3)" />
+          <div
+            class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand"
+          ></div>
+        </label>
+      </div>
+    </div>
+
+    <div>
+
+      <p class="text-center text-blue-500 bg-gray-800">
+        <a href="index.html">Kembali ke Halaman Utama</a>
+      </p>
+      <footer></footer>
+        <div class="bg-gray-800 text-green-400 text-center py-3">
+          <p>&copy; 2026 R_ndzhx. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ini adalah script js kita -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="saklar.js" type="application/javascript"></script>
+  </body>
+</html>
