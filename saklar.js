@@ -34,6 +34,30 @@ function saklar() {
       lampu3.src = "assets/images/off.gif";
   }
 
+  if (toggle4.checked) {
+     lampu4.src = "assets/images/on.gif";
+  } else {
+      lampu4.src = "assets/images/off.gif";
+  }
+  
+  if (toggle5.checked) {
+     lampu5.src = "assets/images/on.gif";
+  } else {
+      lampu5.src = "assets/images/off.gif";
+  }
+
+  if (toggle6.checked) {
+     lampu6.src = "assets/images/on.gif";
+  } else {
+      lampu6.src = "assets/images/off.gif";
+  }
+
+  if (toggle7.checked) {
+     lampu7.src = "assets/images/on.gif";
+  } else {
+      lampu7.src = "assets/images/off.gif";
+  }
+
   // Cek apakah ada lampu yang menyala
 if (
     toggle1.checked ||
