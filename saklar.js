@@ -72,4 +72,42 @@ if (
 } else {
     document.body.style.backgroundColor = "#1f2937";
 }
+
+  // Hitung jumlah lampu yang menyala
+let jumlahLampu = 0;
+
+if (toggle1.checked) jumlahLampu++;
+if (toggle2.checked) jumlahLampu++;
+if (toggle3.checked) jumlahLampu++;
+if (toggle4.checked) jumlahLampu++;
+if (toggle5.checked) jumlahLampu++;
+if (toggle6.checked) jumlahLampu++;
+if (toggle7.checked) jumlahLampu++;
+
+// Ubah warna background berdasarkan jumlah lampu yang menyala
+switch (jumlahLampu) {
+    case 0:
+        document.body.style.backgroundColor = "#1f2937"; // gelap
+        break;
+
+    case 1:
+    case 2:
+        document.body.style.backgroundColor = "#4b5563"; // abu-abu terang
+        break;
+
+    case 3:
+    case 4:
+        document.body.style.backgroundColor = "#fde68a"; // kuning muda
+        break;
+
+    case 5:
+    case 6:
+        document.body.style.backgroundColor = "#facc15"; // kuning terang
+        break;
+
+    case 7:
+        document.body.style.backgroundColor = "#fef08a"; // sangat terang
+        break;
+}
+  
 } 
