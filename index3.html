@@ -102,6 +102,17 @@
         </div>
     </div>
 
+    <div class="flex flex-col items-center gap-2 mb-8">
+      <h2 class="text-white font-bold">Semua Lampu</h2>
+
+        <label for="master-toggle" class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" id="master-toggle" class="sr-only peer" onchange="semuaLampu()"/>
+          <div
+              class="relative w-9 h-5 bg-neutral-quaternary rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 peer-checked:bg-brand">
+          </div>
+        </label>
+    </div>
+
     <div>
       <p class="text-center text-blue-500 hover:text-blue-700 mt-4">
         <a href="index.html">Kembali ke Halaman Utama</a>
