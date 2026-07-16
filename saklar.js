@@ -14,7 +14,8 @@ function saklar() {
   let lampu5 = document.getElementById("lampu5");
   let lampu6 = document.getElementById("lampu6");
   let lampu7 = document.getElementById("lampu7");
-
+  
+  let master = document.getElementById("master-toggle");
 
   if (toggle1.checked) {
      lampu1.src = "assets/images/on.gif";
@@ -109,5 +110,25 @@ switch (jumlahLampu) {
         document.body.style.backgroundColor = "#fef08a"; // sangat terang
         break;
 }
+
+  master.checked =
+    toggle1.checked &&
+    toggle2.checked &&
+    toggle3.checked &&
+    toggle4.checked &&
+    toggle5.checked &&
+    toggle6.checked &&
+    toggle7.checked;
   
-} 
+}
+
+function semuaLampu() {
+    let master = document.getElementById("master-toggle");
+
+    for (let i = 1; i <= 7; i++) {
+        document.getElementById("default-toggle" + i).checked = master.checked;
+    }
+
+    // Perbarui semua lampu
+    saklar();
+}
