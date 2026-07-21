@@ -18,107 +18,123 @@
     }
     </style>
 
-  <body>
+  <body class="bg-black flex flex-col min-h-screen px-4">
 
-    <div class="flex justify-center items-center min-h-screen gap-4">
+    <main class="flex-grow">
+
+      
+
+      <div class="flex flex-col items-center justify-center min-h-screen py-10 gap-10">
+        <h1 class="text-center text-black text-4xl font-bold mb-10">
+          Kontrol Lampu
+        </h1>
+
       <!-- lampu 1 -->
-       <div class="flex flex-col gap-2 items-center">
-        <img src="assets/images/off.gif" alt="" id="lampu1" />
+       <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+        <div class="flex flex-col gap-2 items-center">
+          <img src="assets/images/off.gif" alt="" id="lampu1" class="w-16 sm:w-20 md:w-24 h-auto"/>
 
-        <label for="default-toggle1" class="inline-flex items-center cursor-pointer">
+          <label for="default-toggle1" class="inline-flex items-center cursor-pointer">
           <input type="checkbox" id="default-toggle1" value="" class="sr-only peer" onchange="saklar(1)" />
           <div
-            class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand"
-          ></div>
+            class="relative w-9 h-5 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500"
+            ></div>
         </label>
       </div>
+       
 
       <!-- lampu 2 -->
         <div class="flex flex-col gap-2 items-center">
-          <img src="assets/images/off.gif" alt="" id="lampu2" />
+          <img src="assets/images/off.gif" alt="" id="lampu2" class="w-16 sm:w-20 md:w-24 h-auto"/>
           <label for="default-toggle2" class="inline-flex items-center cursor-pointer">
             <input type="checkbox" id="default-toggle2" value="" class="sr-only peer" onchange="saklar(2)" />
             <div
-              class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand"
+              class="relative w-9 h-5 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500"
             ></div>
           </label>
         </div>
 
       <!-- lampu 3 -->
         <div class="flex flex-col gap-2 items-center">
-          <img src="assets/images/off.gif" alt="" id="lampu3" />
+          <img src="assets/images/off.gif" alt="" id="lampu3" class="w-16 sm:w-20 md:w-24 h-auto"/>
           <label for="default-toggle3" class="inline-flex items-center cursor-pointer">
             <input type="checkbox" id="default-toggle3" value="" class="sr-only peer" onchange="saklar(3)" />
             <div
-              class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand"
+              class="relative w-9 h-5 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500"
             ></div>
           </label>
         </div>
-    </div>
+      </div>
+    
 
-    <div class="flex flex-row gap-10 items-center justify-center min-h-screen">
+    
      <!-- lampu 4 -->
+      <div class="flex flex-wrap justify-center gap-4 md:gap-8">
         <div class="flex flex-col gap-2 items-center">
-          <img src="assets/images/off.gif" alt="" id="lampu4" class="w-20 h-auto" />
+          <img src="assets/images/off.gif" alt="" id="lampu4" class="w-16 sm:w-20 md:w-24 h-auto" />
           <label for="default-toggle4" class="inline-flex items-center cursor-pointer">
             <input type="checkbox" id="default-toggle4" value="" class="sr-only peer" onchange="saklar(4)" />
             <div
-              class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand">
+              class="relative w-9 h-5 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500">
             </div>
           </label>
         </div>
 
       <!-- lampu 5 -->
         <div class="flex flex-col gap-2 items-center">
-          <img src="assets/images/off.gif" alt="" id="lampu5" class="w-20 h-auto" />
+          <img src="assets/images/off.gif" alt="" id="lampu5" class="w-16 sm:w-20 md:w-24 h-auto" />
           <label for="default-toggle5" class="inline-flex items-center cursor-pointer">
             <input type="checkbox" id="default-toggle5" value="" class="sr-only peer" onchange="saklar(5)" />
             <div
-              class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand">
+              class="relative w-9 h-5 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500">
             </div>
           </label>
         </div>
 
       <!-- lampu 6 -->
         <div class="flex flex-col gap-2 items-center">
-          <img src="assets/images/off.gif" alt="" id="lampu6" class="w-20 h-auto" />
+          <img src="assets/images/off.gif" alt="" id="lampu6" class="w-16 sm:w-20 md:w-24 h-auto" />
           <label for="default-toggle6" class="inline-flex items-center cursor-pointer">
             <input type="checkbox" id="default-toggle6" value="" class="sr-only peer" onchange="saklar(6)" />
             <div
-              class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand">
+              class="relative w-9 h-5 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500">
             </div>
           </label>
         </div>
 
       <!-- lampu 7 -->
         <div class="flex flex-col gap-2 items-center">
-          <img src="assets/images/off.gif" alt="" id="lampu7" class="w-20 h-auto" />
+          <img src="assets/images/off.gif" alt="" id="lampu7" class="w-16 sm:w-20 md:w-24 h-auto" />
           <label for="default-toggle7" class="inline-flex items-center cursor-pointer">
             <input type="checkbox" id="default-toggle7" value="" class="sr-only peer" onchange="saklar(7)" />
             <div
-              class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand">
+              class="relative w-9 h-5 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500">
             </div>
           </label>
         </div>
-    </div>
+      </div>
 
-    <div class="flex flex-col items-center gap-2 mb-8">
+    <!-- Toogle semua lampu -->
+    <div class="flex flex-col items-center gap-2 mt-8">
       <h2 class="text-white font-bold">Semua Lampu</h2>
 
         <label for="master-toggle" class="inline-flex items-center cursor-pointer">
         <input type="checkbox" id="master-toggle" class="sr-only peer" onchange="semuaLampu()"/>
           <div
-              class="relative w-9 h-5 bg-neutral-quaternary rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 peer-checked:bg-brand">
+              class="relative w-9 h-5 bg-gray-600 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 peer-checked:bg-green-500">
           </div>
         </label>
     </div>
+    </div>
+
+    </main>
 
     <!-- footer -->
     <div>
       <p class="text-center text-blue-500 hover:text-blue-700 mt-4">
-        <a href="index.html">Kembali ke Halaman Utama</a>
+        <a href="index.html" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 rounded text-white transition">Kembali ke Halaman Utama</a>
       </p>
-      <footer class="text-green-400 text-center py-3">
+      <footer class="text-green-400 text-center py-4 text-sm md:text-base">
           <p>&copy; 2026 R_ndzhx. All rights reserved.</p>
       </footer>
     </div>
