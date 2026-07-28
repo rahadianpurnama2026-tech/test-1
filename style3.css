@@ -45,6 +45,12 @@ nav a:hover {
     transition: background-color .5s ease-in-out;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 .info {
     display: flex;
     justify-content: center;
