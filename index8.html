@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Video</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="container">
+        <video id="myVideo" width="720">
+            <source src="./assets/videos/untitled.mp4" type="video/mp4" />
+        </video>
+        <div class="video-component">
+            <button type="button" onclick="playVideo()" class="btn btn-play">▶ PLAY</button>
+            <button type="button" onclick="pauseVideo()" class="btn btn-pause">⏸ PAUSE</button>
+
+            <input 
+                type="range" 
+                id="progress" 
+                value="0" 
+                min="0" 
+                max="100"
+            >
+
+            <button type="button" onclick="minimizeVideo()" class="btn btn-minimize">🗕 MINIMIZE</button>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; font-size: 20px;">
+        <a href="index.html" class="next-btn">HOME</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 R_ndzhx All rights reserved.</p>
+    </footer>
+    <script src="script3.js"></script>
+</body>
+</html>

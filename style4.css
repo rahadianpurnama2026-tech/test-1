@@ -1,0 +1,109 @@
+*,
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #111;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        position: relative;
+        width: 90%;
+        max-width: 720px;
+    }
+
+    video {
+        display: block;
+        width: 100%;
+        border: 2px solid limegreen;
+        border-radius: 15px;
+    }
+
+    .video-component {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 90%;
+        padding: 10px 15px;
+        background: rgba(0, 0, 0,0.45);
+        backdrop-filter: blur(8px);
+        border-radius: 50px;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .container:hover .video-component {
+        opacity: 1;
+    }
+
+    #progress {
+        flex: 1;
+        cursor: pointer;
+        height: 6px;
+    }
+
+    .btn {
+        border: none;
+        outline: none;
+        padding: 10px 18px;
+        font-size: 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        color: white;
+        transition: .3s;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0,.5);
+    }
+
+    .btn-play {
+        background: #28a745;
+    }
+
+    .btn-pause {
+        background: #dc3545;
+    }
+
+    .btn-minimize {
+        background: #6c757d;
+    }
+
+    .next-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .next-btn:hover {
+        background-color: darkgreen;
+    }
+
+    footer {
+        margin-top: 25px;
+        text-align: center;
+        padding: 20px;
+        color: limegreen;
+        font-size: 16px;
+    }
