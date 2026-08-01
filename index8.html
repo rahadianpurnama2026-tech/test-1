@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-    <div class="container">
-        <video id="myVideo" width="720">
-            <source src="./assets/untitled.mp4" type="video/mp4" />
+    <div class="container" id="videoContainer">
+        <video id="myVideo">
+            <source src="./assets/videos/untitled.mp4" type="video/mp4" />
         </video>
-        <div class="video-component">
-            <button type="button" onclick="playVideo()" class="btn btn-play">▶ PLAY</button>
-            <button type="button" onclick="pauseVideo()" class="btn btn-pause">⏸ PAUSE</button>
+        <div class="video-component" id="controls">
 
             <input 
                 type="range" 
@@ -23,7 +21,12 @@
                 max="100"
             >
 
-            <button type="button" onclick="minimizeVideo()" class="btn btn-minimize">🗕 MINIMIZE</button>
+            <div class="button-group">
+                <button type="button" onclick="playVideo()" class="btn btn-play">▶ PLAY</button>
+                <button type="button" onclick="pauseVideo()" class="btn btn-pause">⏸ PAUSE</button>
+                <button type="button" onclick="minimizeVideo()" class="btn btn-minimize">🗕 MINIMIZE</button>
+            </div>
+
         </div>
     </div>
 
