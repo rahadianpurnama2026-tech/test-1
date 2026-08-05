@@ -6,21 +6,55 @@
     <title>R_ndzhx</title>
 </head>
 <body>
-    <h1 id="halo">Halo Dunia</h1>
+    <h1 id="halo">Halo Dunia!</h1>
 
-    <h2>Kalkulator sederhana</h2>
+    <!-- ============================== -->
+    <!-- Kalkulator sederhana -->
+    <!-- ============================== -->
 
-    <input type="number" id="angka1" placeholder="Angka pertama">
-    <br><br>
-    <input type="number"  id="angka2" placeholder="Angka Kedua">
-    <br><br>
+     <div>
+        <h2>Kalkulator sederhana</h2>
 
-    <button onclick="tambah()">+</button>
-    <button onclick="kurang()">-</button>
-    <button onclick="kali()">x</button>
-    <button onclick="bagi()">:</button>
+            <input type="number" id="angka1" placeholder="Angka pertama">
+            <br><br>
+            <input type="number"  id="angka2" placeholder="Angka Kedua">
+            <br><br>
 
-    <h3 id="hasil">Hasil</h3>
+            <button onclick="tambah()">+</button>
+            <button onclick="kurang()">-</button>
+            <button onclick="kali()">x</button>
+            <button onclick="bagi()">:</button>
+
+        <h3 id="hasil">Hasil :</h3>
+     </div>
+
+    <!-- ============================== -->
+    <!-- Cek Kelulusan -->
+    <!-- ============================== -->
+
+     <div>
+        <h2>Cek Kelulusan</h2>
+
+            <input type="number" id="nilai" placeholder="Masukkan Nilai">
+            <br><br>
+
+            <button onclick="cek()">Cek</button>
+
+            <h3 id="hasil1"></h3>
+     </div>
+
+    <!-- ============================== -->
+    <!-- Cek Usia (Bonus challenge) -->
+    <!-- ============================== -->
+
+    <div>
+        <h2>Cek Usia</h2>
+
+            <input type="number" id="usia">
+            <br><br>
+
+            <button>Cek</button>
+    </div>
 
     <script src="script4.js"></script>
 </body>
