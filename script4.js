@@ -55,12 +55,32 @@ function cek() {
     let nilai = Number(document.getElementById("nilai").value);
 
     if (nilai < 0 || nilai > 100) {
-        document.getElementById("hasil1").innerHTML = "Nilai tidak valid. Silahkan masukkan nilai antara 0-100.";
-    } 
-    else if (nilai >= 75) {
-        document.getElementById("hasil1").innerHTML = "Selamat, anda Lulus!";
-    } else {
-        document.getElementById("hasil1").innerHTML = "Maaf, anda Tidak Lulus.";
+        document.getElementById("hasil1").innerHTML = "Nilai tidak valid!";
+    }
+    else {
+
+        if (nilai >= 75) {
+            document.getElementById("hasil1").innerHTML = "Selamat, anda Lulus!";
+        }
+        else {
+            document.getElementById("hasil1").innerHTML = "Maaf, anda Tidak Lulus!"
+        }
+    
+        if (nilai >= 90) {
+            document.getElementById("hasil2").innerHTML = "Grade: A";
+        }
+        else if (nilai >= 80) {
+            document.getElementById("hasil2").innerHTML = "Grade: B";
+        }
+        else if (nilai >= 70) {
+            document.getElementById("hasil2").innerHTML = "Grade: C";
+        }
+        else if (nilai >= 60) {
+            document.getElementById("hasil2").innerHTML = "Grade: D";
+        }
+        else {
+            document.getElementById("hasil2").innerHTML = "Grade: E";
+        }
     }
 }
 
