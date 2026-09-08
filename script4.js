@@ -529,3 +529,89 @@ function cekNilai2() {
         }
     }
 }
+
+// Challenge hari 14 (addEventListener("click", "input", "mouseover"))
+
+let tombol1 = document.getElementById("tombol1");
+
+tombol1.addEventListener("click", function() {
+    document.getElementById("hasil6").innerHTML = "Halo Rndzhx! kamu berhasil menggunakan Event DOM!";
+});
+
+
+let nama4 = document.getElementById("nama4");
+
+nama4.addEventListener("input", function() {
+    document.getElementById("hasil7").innerHTML = nama4.value;
+});
+
+
+let tombol2 = document.getElementById("tombol2");
+
+tombol2.addEventListener("mouseover", function() {
+    document.getElementById("hasil8").innerHTML = "Mouse sedang berada di tombol!";
+});
+
+
+let tombol3 = document.getElementById("tombol3");
+
+tombol3.addEventListener("mouseover", function() {
+    document.getElementById("hasil9").innerHTML = "Mouse masuk ke tombol!";
+});
+
+tombol3.addEventListener("mouseout", function() {
+    document.getElementById("hasil9").innerHTML = "Mouse meninggalkan tombol!";
+});
+
+
+let nama5 = document.getElementById("nama5");
+let tombol4 = document.getElementById("tombol4");
+
+tombol4.addEventListener("click", function() {
+    document.getElementById("hasil10").innerHTML = nama5.value;
+});
+
+tombol4.addEventListener("mouseover", function() {
+    document.getElementById("hasil10").innerHTML = `Halo, ${nama5.value}! Selamat datang!`;
+});
+
+tombol4.addEventListener("mouseout", function() {
+    document.getElementById("hasil10").innerHTML = "Masukkan nama kamu. . .";
+});
+
+
+let nama6 = document.getElementById("nama6");
+let tombol5 = document.getElementById("tombol5");
+
+tombol5.addEventListener("click", function() {
+
+    if (nama6.value === "") {
+        document.getElementById("hasil11").innerHTML = "Nama wajib diisi!";
+        document.getElementById("hasil11").style.color = "red";
+    } else  {
+        document.getElementById("hasil11").innerHTML = `Halo, ${nama6.value}!`;
+        document.getElementById("hasil11").style.color = "green";
+    }
+});
+
+
+let nama7 = document.getElementById("nama7");
+let umur7 = document.getElementById("umur7");
+let tombol6 = document.getElementById("tombol6");
+
+tombol6.addEventListener("click", function() {
+
+    let umur = Number(umur7.value);
+
+    if (nama7.value === "") {
+        document.getElementById("hasil12").innerHTML = "Nama wajib diisi!";
+    } else if (umur7.value === "") {
+        document.getElementById("hasil12").innerHTML = "Umur wajib diisi!";
+    } else if (umur < 0 || umur > 100) {
+        document.getElementById("hasil12").innerHTML = "Umur tidak valid!";
+    } else if (umur >= 18) {
+        document.getElementById("hasil12").innerHTML = `Halo, ${nama7.value}! Anda sudah dewasa!`;
+    } else {
+        document.getElementById("hasil12").innerHTML = `Halo, ${nama7.value}! Anda masih di bawah umur!`;
+    }
+});
