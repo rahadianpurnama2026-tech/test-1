@@ -615,3 +615,83 @@ tombol6.addEventListener("click", function() {
         document.getElementById("hasil12").innerHTML = `Halo, ${nama7.value}! Anda masih di bawah umur!`;
     }
 });
+
+
+let nama8 = document.getElementById("nama8");
+let umur8 = document.getElementById("umur8");
+let email8 = document.getElementById("email8");
+let tombol8 = document.getElementById("tombol8");
+
+tombol8.addEventListener("click", function() {
+
+    let umur1 = Number(umur8.value);
+
+    if (nama8.value === "") {
+        document.getElementById("hasil13").innerHTML = "Nama wajib diisi!";
+    } else if (umur8.value === "") {
+        document.getElementById("hasil13").innerHTML = "Umur wajib diisi!";
+    } else if (umur1 < 0 || umur1 > 100) {
+        document.getElementById("hasil13").innerHTML = "Umur tidak valid!";
+    } else if (email8.value === "") {
+        document.getElementById("hasil13").innerHTML = "Email wajib diisi!";
+    } else if (email8.value.includes("@") === false) {
+        document.getElementById("hasil13").innerHTML = "Email tidak valid!";
+    } else {
+        document.getElementById("hasil13").innerHTML = `Pendaftaran berhasil! Selamat datang, ${nama8.value}!`;
+    }
+});
+
+
+let nama9 = document.getElementById("nama9");
+let umur9 = document.getElementById("umur9");
+let email9 = document.getElementById("email9");
+let tombol9 = document.getElementById("tombol9");
+let hasil14 = document.getElementById("hasil14");
+
+tombol9.addEventListener("click", function() {
+
+    let umur2 = Number(umur9.value);
+
+    if (nama9.value === "") {
+        hasil14.innerHTML = "Nama wajib diisi!";
+        hasil14.style.color = "red";
+    } else if (umur9.value === "") {
+        hasil14.innerHTML = "Umur wajib diisi!";
+        hasil14.style.color = "red";
+    } else if (umur2 < 0 || umur2 > 100) {
+        hasil14.innerHTML = "Umur tidak valid!";
+        hasil14.style.color = "red";
+    } else if (email9.value === "") {
+        hasil14.innerHTML = "Email wajib diisi!";
+        hasil14.style.color = "red";
+    } else if (email9.value.includes("@") === false) {
+        hasil14.innerHTML = "Email tidak valid!";
+        hasil14.style.color = "red";
+    } else {
+        hasil14.innerHTML = `Pendaftaran berhasil! Selamat datang, ${nama9.value}!`;
+        hasil14.style.color = "green";
+    }
+});
+
+
+let nama10 = document.getElementById("nama10");
+let password10 = document.getElementById("password10");
+let tombol10 = document.getElementById("tombol10");
+let hasil15 = document.getElementById("hasil15");
+
+tombol10.addEventListener("click", function() {
+
+    if (nama10.value === "") {
+        hasil15.innerHTML = "Nama wajib diisi!";
+        hasil15.style.color = "red";
+    } else if (password10.value === "") {
+        hasil15.innerHTML = "Password wajib diisi!";
+        hasil15.style.color = "red";
+    } else if (nama10.value === "Rndzhx" && password10.value === "12345") {
+        hasil15.innerHTML = `Login berhasil! Selamat datang, ${nama10.value}!`;
+        hasil15.style.color = "green";
+    } else {
+        hasil15.innerHTML = "Username atau Password salah!";
+        hasil15.style.color = "red";
+    }
+});
